@@ -1,0 +1,76 @@
+{
+  "name": "musicyoutubeclient",
+  "version": "1.0.0",
+  "description": "Um cliente de desktop para o YouTube Music com Ad-Blocker integrado.",
+  "author": {
+    "name": "GabrielDazzi",
+    "email": "seu-email@exemplo.com"
+  },
+  "homepage": "https://github.com/seu-usuario/seu-repositorio",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win:x64": "electron-builder --win --x64",
+    "build:win:arm64": "electron-builder --win --arm64",
+    "build:mac": "electron-builder --mac",
+    "build:linux:x64": "electron-builder --linux --x64",
+    "build:linux:arm64": "electron-builder --linux --arm64",
+    "build:all": "npm-run-all build:win:* build:mac build:linux:*"
+  },
+  "keywords": [
+    "electron",
+    "youtube",
+    "music",
+    "player"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@ghostery/adblocker-electron": "^2.9.5",
+    "cross-fetch": "^4.1.0",
+    "electron-store": "^10.1.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^24.13.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "build": {
+    "appId": "com.gabrieldazzi.musicyoutubeclient",
+    "productName": "Youtube Music",
+    "copyright": "Copyright © 2025 ${author}",
+    "files": [
+      "main.js",
+      "preload.js"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "mac": {
+      "category": "public.app-category.music",
+      "icon": "build/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "nsis",
+      "artifactName": "${productName} Setup ${version}-${arch}.${ext}"
+    },
+    "linux": {
+      "icon": "build/icon.png",
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Audio"
+    }
+  }
+}
