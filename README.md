@@ -12,9 +12,6 @@
 -   **Controle por Teclas de Mídia Globais**
     -   Controle a reprodução (`Tocar/Pausar`, `Próxima`, `Anterior`) usando as teclas de mídia do seu teclado, mesmo quando o aplicativo estiver em segundo plano.
     
--   **Notificações Nativas**
-    -   Receba uma notificação no seu desktop toda vez que uma música nova começar a tocar, mostrando o título, o artista e a capa do álbum.
-
 -   **Leve e Integrado**
     -   Roda em uma janela de aplicativo dedicada, sem a necessidade de um navegador completo, oferecendo uma experiência mais ágil e integrada ao seu desktop (Windows, macOS e Linux).
 
