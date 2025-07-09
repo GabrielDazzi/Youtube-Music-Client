@@ -19,5 +19,5 @@
 
 -   [**Electron**](https://www.electronjs.org/) - Framework para criar aplicativos de desktop multiplataforma.
 -   [**Node.js**](https://nodejs.org/) - Ambiente de execução para o processo principal do aplicativo.
--   [**@ghostery/adblocker-electron**](https://github.com/ghostery/adblocker-electron) - Engine de bloqueio de anúncios e rastreadores.
+-   [**@ghostery/adblocker-electron**](https://github.com/ghostery/adblocker) - Engine de bloqueio de anúncios e rastreadores.
 -   [**electron-store**](https://github.com/sindresorhus/electron-store) - Para persistência de configurações, como o tamanho da janela.
